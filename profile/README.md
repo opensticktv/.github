@@ -1,15 +1,14 @@
 # OpenStick.tv
 
-An open-hardware, open-software TV streaming device. Casting, HDMI-CEC, 4K output, Home Assistant, Apple Home and Matter control, signed updates for five years, and no telemetry. It says plainly what it can't do: 4K from Netflix, Disney+ or HBO Max, which needs certified hardware no open device can get.
+A 4K streaming stick with nothing selling to you.
 
-| Repo | What it is |
-| --- | --- |
-| [openstick](https://github.com/opensticktv/openstick) | PRD, decision records, roadmap. Start here. |
-| [os](https://github.com/opensticktv/os) | OpenStick OS: image build, kernel, board support, A/B updates |
-| [openstickd](https://github.com/opensticktv/openstickd) | Device daemon: settings, local API, CEC, HomeKit and Matter bridges |
-| [launcher](https://github.com/opensticktv/launcher) | 10-foot home screen and settings UI |
-| [hardware](https://github.com/opensticktv/hardware) | Enclosure CAD, board files, BOM |
-| [website](https://github.com/opensticktv/website) | openstick.tv and the build guide |
-| [ha-openstick](https://github.com/opensticktv/ha-openstick) | Home Assistant integration |
+OpenStick plays Netflix, HBO Max, Disney+ and Prime in 4K on a certified Android TV platform. On top of that base, everything we build is open source:
 
-Status: v0 prototype. Nothing is ready to use yet.
+- a home screen with no ads and no sponsored rows
+- open casting receivers alongside Google Cast
+- control from Home Assistant and Apple Home, plus a local API
+- case, remote shell and accessory designs you can print or modify
+
+The bootloader, Android core, DRM and Google services stay locked, because services only send 4K to certified, locked devices. We say so up front.
+
+**Status:** in development, choosing a manufacturing partner. Not for sale yet. Repositories open here as each part is ready.
