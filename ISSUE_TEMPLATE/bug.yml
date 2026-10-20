@@ -1,0 +1,18 @@
+name: Bug report
+description: Something on an OpenStick device or in the software does not work.
+labels: [bug]
+body:
+  - type: input
+    id: board
+    attributes: { label: Board, description: "e.g. Orange Pi Zero 2W 2 GB, Pi CM5 stick" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: OpenStick version, description: Settings → About }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: What you did, what you expected, what happened instead. }
+    validations: { required: true }
+  - type: textarea
+    id: logs
+    attributes: { label: Logs, render: text }
